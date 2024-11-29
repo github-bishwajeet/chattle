@@ -1,15 +1,15 @@
 {
-    "name": "ilmedova/chattle",
+    "name": "jeet/chattle",
     "description": "This is a laravel library package for simple realization of customer support chatting",
     "type": "library",
-    "homepage": "https://github.com/ilmedova/chattle",
+    "homepage": "https://github.com/github-bishwajeet/chattle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mahri Ilmedova",
-            "email": "ilmedovamahri@gmail.com",
+            "name": "Bishwajeet Kumar",
+            "email": "bishwajeetk003@gmail.com",
             "role": "Creator & Maintainer",
-            "homepage": "https://github.com/ilmedova"
+            "homepage": "https://github.com/github-bishwajeet"
         }
     ],
     "keywords": [
