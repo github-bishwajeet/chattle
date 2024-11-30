@@ -33,14 +33,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Ilmedova\\Chattle\\": "src"
+            "Jeet\\Chattle\\": "src"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Ilmedova\\Chattle\\ChatServiceProvider"
+                "Jeet\\Chattle\\ChatServiceProvider"
             ]
         }
     }

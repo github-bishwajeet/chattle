@@ -1,12 +1,12 @@
 <?php
 
-namespace Ilmedova\Chattle\app\Http\Controllers\Chat;
+namespace Jeet\Chattle\app\Http\Controllers\Chat;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use Ilmedova\Chattle\app\Events\ChatUpdate;
-use Ilmedova\Chattle\app\Events\SendMessage;
-use Ilmedova\Chattle\app\Models\Chat;
-use Ilmedova\Chattle\app\Models\Message;
+use Jeet\Chattle\app\Events\ChatUpdate;
+use Jeet\Chattle\app\Events\SendMessage;
+use Jeet\Chattle\app\Models\Chat;
+use Jeet\Chattle\app\Models\Message;
 
 class PostMessageController extends Controller
 {

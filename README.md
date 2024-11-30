@@ -3,9 +3,9 @@
 
 An implementation of a Customer Support Chat System in Laravel.
 
-This project will continue to grow and will be maintained. Your support is highly appreciated and will motivate the author to improve the package. If you've found this library helpful and want to support the author, please, consider any donation by clicking the button below or following the link to [buymeacoffee.com](https://www.buymeacoffee.com/ilmedova). 
+This project will continue to grow and will be maintained. Your support is highly appreciated and will motivate the author to improve the package. If you've found this library helpful and want to support the author, please, consider any donation by clicking the button below or following the link to [buymeacoffee.com](https://www.buymeacoffee.com/jeet). 
 
-<a href="https://www.buymeacoffee.com/ilmedova" target="_blank"><img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="55px" width= "200px"></a>
+<a href="https://www.buymeacoffee.com/jeet" target="_blank"><img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="55px" width= "200px"></a>
 
 ## Table of Contents
 1. [Features](#features)
@@ -30,7 +30,7 @@ This project will continue to grow and will be maintained. Your support is highl
 Default installation is via [Composer](https://getcomposer.org/).
 
 ```bash
-composer require ilmedova/chattle --with-all-dependencies
+composer require jeet/chattle --with-all-dependencies
 ```
 
 The service provider will automatically get registered. Or you could add the Service Provider manually to your
@@ -39,14 +39,14 @@ The service provider will automatically get registered. Or you could add the Ser
 ```php
 'providers' => [
     //...
-    Ilmedova\Chattle\ChatServiceProvider::class,
+    Jeet\Chattle\ChatServiceProvider::class,
 ]
 ```
 
 Publish the assets for css and js files
 
 ```bash
-php artisan vendor:publish --provider="Ilmedova\Chattle\ChatServiceProvider"
+php artisan vendor:publish --provider="Jeet\Chattle\ChatServiceProvider"
 ```
 
 

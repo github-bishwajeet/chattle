@@ -1,6 +1,6 @@
 <?php
 
-namespace Ilmedova\Chattle\app\Events;
+namespace Jeet\Chattle\app\Events;
 
 use Domain\Users\Models\User;
 use Illuminate\Queue\SerializesModels;

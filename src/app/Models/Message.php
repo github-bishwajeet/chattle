@@ -1,6 +1,6 @@
 <?php
 
-namespace Ilmedova\Chattle\app\Models;
+namespace Jeet\Chattle\app\Models;
 
 use Domain\Users\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

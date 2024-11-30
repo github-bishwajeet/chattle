@@ -1,9 +1,9 @@
 <?php
 
-namespace Ilmedova\Chattle\app\Http\Controllers\Chat;
+namespace Jeet\Chattle\app\Http\Controllers\Chat;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use Ilmedova\Chattle\app\Models\Chat;
+use Jeet\Chattle\app\Models\Chat;
 
 class AdminController extends Controller
 {
