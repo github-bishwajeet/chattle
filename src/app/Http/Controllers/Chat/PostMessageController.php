@@ -21,7 +21,7 @@ class PostMessageController extends Controller
         ]);
         event(new SendMessage($message));
         if($message->sender == 'customer'){
-            $chats = Chat::withCount('unseen_messages')->orderBy('unseen_messages_count', 'desc')->paginate(10);
+            $chats = Chat::withCount('unseen_messages')->orderBy('unseen_messages_count', 'desc')->paginate();
             event(new ChatUpdate($chats));
         }
         return response($message, 200);

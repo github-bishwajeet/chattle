@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $chats = Chat::withCount('unseen_messages')->orderBy('unseen_messages_count', 'desc')->paginate(10);
+        $chats = Chat::withCount('unseen_messages')->orderBy('unseen_messages_count', 'desc')->paginate();
         return view('chattle::admin.messages', [
             'chats' => $chats
         ]);

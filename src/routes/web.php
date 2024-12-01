@@ -7,7 +7,7 @@ use Jeet\Chattle\app\Http\Controllers\Chat\GetMessagesController;
 use Jeet\Chattle\app\Http\Controllers\Chat\PostMessageController;
 use Jeet\Chattle\app\Http\Controllers\Chat\GetChatsController;
 
-Route::prefix('chattle')->group(function () {
+Route::middleware(['web', 'auth'])->prefix('chattle')->group(function () {
     Route::view('chat', 'chattle::chat');
     Route::post('create-chat', CreateController::class);
     Route::post('post-message', PostMessageController::class);
