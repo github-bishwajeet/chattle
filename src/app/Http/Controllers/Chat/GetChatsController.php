@@ -10,11 +10,19 @@ class GetChatsController extends Controller
 {
     public function __invoke(Request $request){
         if(auth()->check()){
-            $email = auth()->user()->email;
+            $user = auth()->user();
         }
         $chats = Chat::query();
-        if(!empty($email) && $request->chat){
-            $chats = $chats->where("email", $email)->latest()->first();
+        if(!empty($user) && $request->chat){
+            $chats = $chats->where("email", $user->email)->latest()->first();
+            if(!$chats){
+                $chats = new Chat;
+                $chats->name = $user->name;
+                $chats->email = $user->email;
+                $chats->last_sender = 'customer';
+                $chats->unseen_messages = 0;
+                $chats->save();
+            }
         }else{
             $chats =$chats->withCount('unseen_messages')->orderBy('unseen_messages_count', 'desc')->paginate(10);
         }
